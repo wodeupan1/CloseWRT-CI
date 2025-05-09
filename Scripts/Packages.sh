@@ -111,5 +111,3 @@ UPDATE_VERSION() {
 
 #UPDATE_VERSION "软件包名" "测试版，true，可选，默认为否"
 UPDATE_VERSION "sing-box"
-
-git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
