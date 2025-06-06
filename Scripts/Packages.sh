@@ -126,3 +126,6 @@ git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
 
 # luci-app-vaultwarden
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-lib-taskd luci-app-vaultwarden luci-lib-xterm taskd
+
+# ext-throttle
+git_sparse_clone main https://github.com/karnadii/rooter package/rooter/0optionalapps/ext-throttle
