@@ -109,8 +109,8 @@ UPDATE_VERSION() {
 	done
 }
 
-#UPDATE_VERSION "软件包名" "测试版，true，可选，默认为否"
-UPDATE_VERSION "sing-box"
+# UPDATE_VERSION "软件包名" "测试版，true，可选，默认为否"
+# UPDATE_VERSION "sing-box"
 
 function git_sparse_clone() {
 	branch="$1" repourl="$2" && shift 2
@@ -125,5 +125,5 @@ function git_sparse_clone() {
 git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
 
 # luci-app-vaultwarden
-git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-vaultwarden
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-lib-taskd luci-app-vaultwarden 
 
