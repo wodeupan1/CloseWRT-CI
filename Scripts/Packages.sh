@@ -58,6 +58,7 @@ UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
 
 UPDATE_PACKAGE "fancontrol" "rockjake/luci-app-fancontrol" "main"
 UPDATE_PACKAGE "openlist" "sbwml/luci-app-openlist" "main"
+UPDATE_PACKAGE "lucky" "gdy666/luci-app-lucky" "main"
 # UPDATE_PACKAGE "ddns-go" "sirpdboy/luci-app-ddns-go" "main"
 # UPDATE_PACKAGE "easytier" "EasyTier/luci-app-easytier" "main"
 # UPDATE_PACKAGE "gecoosac" "lwb1978/openwrt-gecoosac" "main"
@@ -123,7 +124,7 @@ function git_sparse_clone() {
 }
 
 # 拉取Lucky最新版的源码
-git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
+# git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
 
 # 修复部分依赖
 git_sparse_clone main https://github.com/karnadii/rooter package/rooter/0optionalapps/ext-throttle package/rooter-extra/speedtestpp
