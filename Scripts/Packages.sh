@@ -63,7 +63,7 @@ UPDATE_PACKAGE "lucky" "gdy666/luci-app-lucky" "main"
 # UPDATE_PACKAGE "easytier" "EasyTier/luci-app-easytier" "main"
 # UPDATE_PACKAGE "gecoosac" "lwb1978/openwrt-gecoosac" "main"
 UPDATE_PACKAGE "mosdns" "sbwml/luci-app-mosdns" "v5" "" "v2dat"
-UPDATE_PACKAGE "netspeedtest" "sirpdboy/luci-app-netspeedtest" "js" "" "homebox speedtest"
+# UPDATE_PACKAGE "netspeedtest" "sirpdboy/luci-app-netspeedtest" "js" "" "homebox speedtest"
 UPDATE_PACKAGE "partexp" "sirpdboy/luci-app-partexp" "main"
 # UPDATE_PACKAGE "qbittorrent" "sbwml/luci-app-qbittorrent" "master" "" "qt6base qt6tools rblibtorrent"
 # UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
@@ -114,17 +114,11 @@ UPDATE_VERSION() {
 #UPDATE_VERSION "软件包名" "测试版，true，可选，默认为否"
 UPDATE_VERSION "sing-box"
 
-function git_sparse_clone() {
-	branch="$1" repourl="$2" && shift 2
-	git clone --depth=1 -b $branch --single-branch --filter=blob:none --sparse $repourl
-	repodir=$(echo $repourl | awk -F '/' '{print $(NF)}')
-	cd $repodir && git sparse-checkout set $@
-	mv -f $@ ../package
-	cd .. && rm -rf $repodir
-}
-
-# 拉取Lucky最新版的源码
-# git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
-
-# 修复部分依赖
-git_sparse_clone main https://github.com/karnadii/rooter package/rooter/0optionalapps/ext-throttle package/rooter-extra/speedtestpp
+# function git_sparse_clone() {
+# 	branch="$1" repourl="$2" && shift 2
+# 	git clone --depth=1 -b $branch --single-branch --filter=blob:none --sparse $repourl
+# 	repodir=$(echo $repourl | awk -F '/' '{print $(NF)}')
+# 	cd $repodir && git sparse-checkout set $@
+# 	mv -f $@ ../package
+# 	cd .. && rm -rf $repodir
+# }
