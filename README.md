@@ -1,5 +1,7 @@
 # CloseWRT-CI
-云编译CloseWRT固件
+云编译京东云百里CloseWRT固件
+
+去除原git中的内网穿透和USB相关插件，添加adguardhome、lucky、openclash、openlist2
 
 PADAVANONLY-24.10源码：
 https://github.com/padavanonly/immortalwrt-mt798x-24.10.git
