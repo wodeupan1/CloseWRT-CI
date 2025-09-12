@@ -70,7 +70,7 @@ UPDATE_PACKAGE "partexp" "sirpdboy/luci-app-partexp" "main"
 # UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
 # UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-app-wolplus"
 # UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
-UPDATE_PACKAGE "adguardhome" "xiaoxiao29/luci-app-adguardhome" "master"
+UPDATE_PACKAGE "adguardhome" "stevenjoezhang/luci-app-adguardhome" "dev"
 UPDATE_PACKAGE "lucky" "gdy666/luci-app-lucky" "main"
 # UPDATE_PACKAGE "quickfile" "sbwml/luci-app-quickfile" "main"
 
